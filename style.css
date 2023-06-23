@@ -1,5 +1,6 @@
 body {
-    background-color: #FFD93D;    
+    background-color: #FFD93D; 
+    margin: 0px;   
 }
 
 nav {
@@ -20,6 +21,14 @@ nav > ul {
 
 nav > ul > li {
     display: inline-block;
+}
+
+nav > span > img {
+    height: 50px;
+    width: auto;
+    padding: 8px;
+    border-left: 100%;
+    border-right: 100%;
 }
 
 nav > figure > img {
@@ -93,13 +102,15 @@ h2 {
 
 .all-hamsters {
     display: flex;
-    gap: 10px;
-    /* align-items: center; */
-    /* justify-content: space-evenly; */
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-bottom: 35px;
+    padding-right: 100px;
 }
 
 .syrian-hamster {
-    width: 135%;
+    width: 70%;
     border-top-left-radius: 150px;
     border-bottom-left-radius: 150px;
 }
@@ -110,23 +121,45 @@ h2 {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    flex-basis: 100%;
 }
 
 .other-hamster {
-    width: 35%;
-    height: 35%;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;   
+    /* width: 33%;
+    height: 33%; */
+    border-top-right-radius: 90%;
+    border-bottom-left-radius: 90%;   
 }
 
-/* #chinese-hamster {
-    width: 38%;
-    height: 35%;
-} */
+#winter-hamster {
+    width: 45%;
+    /* height: 45%; */
+}
+
+#roborovski-hamster {
+    width: 45%;
+    /* height: 45%; */
+}
+
+#chinese-hamster {
+    width: 40%;
+    /* height: 15%; */
+}
+
+.hamster-description{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8400;
+    margin: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 .hamster-knowledge {
     font-family: Bangers;
     background-color: #FF8400;
+    padding-left: 50px;
 }
 
 figure .flex-place {
@@ -141,6 +174,7 @@ figcaption {
 figure .flex-place img {
     height: 250px;
     width: auto;
+    /* padding-right: 50px; */
 }
 
 .hamster-seed {
@@ -201,6 +235,7 @@ button[type="submit"] {
     .hamster-knowledge > .flex-place {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   
     .hamster-knowledge > .flex-place figure {
@@ -217,7 +252,7 @@ button[type="submit"] {
     }
   
     .hamster-knowledge > .flex-place.row-reverse {
-      flex-direction: row-reverse;
+      flex-direction: column;
     }
   
     .hamster-knowledge > .flex-place.row-reverse p {
@@ -225,7 +260,7 @@ button[type="submit"] {
     }
   
     .hamster-knowledge > .flex-place.row-reverse figure {
-      margin-left: 40px;
+      /* margin-left: 40px; */
       min-width: 320px;
     }
   
@@ -259,4 +294,22 @@ button[type="submit"] {
       height: 35%;
       object-fit: cover;
     } */
-}   
+}
+
+.small-menu {
+    display: none;
+  }
+  
+  .menu {
+    display: block;
+  }
+  
+  @media only screen and (max-width: 2560px) {
+    .small-menu {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+    }
+  }
