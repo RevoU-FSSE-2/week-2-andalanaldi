@@ -16,4 +16,6 @@ If you cannot find the domain link here is the link (a reminder for the author t
 
 **This site is intended for tablet or desktop screens with minimun width is 768px**. Hence, please open this site from a tablet or PC desktop / laptop with minimum screen 768px width. 
 
-If there is a time for update for sure this documentation will be updated.
+
+If there is a time for update for sure this documentation will be updated.**Updated by new javascript file for hamburger menu.**
+
